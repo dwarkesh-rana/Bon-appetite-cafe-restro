@@ -4,12 +4,12 @@ import { X, ShoppingBag, Plus, Minus, Check, ChevronRight, QrCode, FileText, Spa
 import { useTheme } from '../context/ThemeContext';
 
 const FALLBACK_MENU = [
-  { id: '1', name: 'Grand Espresso Macchiato', price: 450, category: '☕ Coffee', desc: 'Single-origin espresso with whipped cream and gold dust' },
-  { id: '2', name: 'Champagne Truffle Latte', price: 650, category: '☕ Coffee', desc: 'Steamed milk, house mocha syrup, infused with white truffle scent' },
-  { id: '3', name: 'Truffle Tagliolini', price: 1850, category: 'Main Course', desc: 'Handcrafted pasta, Parmigiano-Reggiano, fresh black truffle shavings' },
-  { id: '4', name: 'Wild Mushroom Risotto', price: 1450, category: 'Main Course', desc: 'Arborio rice, forest mushrooms, white wine, mascarpone' },
-  { id: '5', name: 'Golden Foil Cheesecake', price: 950, category: '🍰 Desserts', desc: 'Madagascar vanilla bean cheesecake topped with edible 24k gold leaf' },
-  { id: '6', name: 'Pistachio Paris-Brest', price: 850, category: '🍰 Desserts', desc: 'Choux pastry ring filled with premium Sicilian pistachio praline cream' }
+  { id: '1', name: 'Grand Espresso Macchiato', price: 450, category: '☕ Coffee', desc: 'Single-origin espresso with whipped cream and gold dust', available: true },
+  { id: '2', name: 'Champagne Truffle Latte', price: 650, category: '☕ Coffee', desc: 'Steamed milk, house mocha syrup, infused with white truffle scent', available: true },
+  { id: '3', name: 'Truffle Tagliolini', price: 1850, category: 'Main Course', desc: 'Handcrafted pasta, Parmigiano-Reggiano, fresh black truffle shavings', available: true },
+  { id: '4', name: 'Wild Mushroom Risotto', price: 1450, category: 'Main Course', desc: 'Arborio rice, forest mushrooms, white wine, mascarpone', available: true },
+  { id: '5', name: 'Golden Foil Cheesecake', price: 950, category: '🍰 Desserts', desc: 'Madagascar vanilla bean cheesecake topped with edible 24k gold leaf', available: true },
+  { id: '6', name: 'Pistachio Paris-Brest', price: 850, category: '🍰 Desserts', desc: 'Choux pastry ring filled with premium Sicilian pistachio praline cream', available: true }
 ];
 
 export default function QuickOrder({ isOpen, onClose }) {
