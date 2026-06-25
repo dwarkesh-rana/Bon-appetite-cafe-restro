@@ -1,0 +1,188 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+  
+  --color-espresso: #1A0F0A;
+  --color-espresso-dark: #0D0805;
+  --color-espresso-light: #2C1A12;
+  --color-gold: #D4AF37;
+  --color-gold-light: #F3E5AB;
+  --color-gold-dark: #AA7C11;
+  --color-gold-accent: #C5A880;
+  --color-cream: #FAF7F2;
+  --color-cream-dark: #F3ECE0;
+  --color-sand: #EAE0D5;
+  --color-olive: #242D20;
+  --color-matte-black: #0A0A0A;
+  --color-luxury-gray: #1E1E1E;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-espresso-dark, #0D0805);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold-dark, #AA7C11);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold, #D4AF37);
+}
+
+/* Selection Color */
+::selection {
+  background-color: var(--color-gold, #D4AF37);
+  color: #0A0A0A;
+}
+
+/* Global Reset & Body */
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0A0A0A; /* Defaults to Matte Black */
+  color: #FAF7F2; /* Defaults to Cream */
+}
+
+/* Custom cursor default styling helper */
+@media (hover: hover) and (pointer: fine) {
+  .custom-cursor-active,
+  .custom-cursor-active * {
+    cursor: none !important;
+  }
+}
+
+/* Ambient Grain Overlay for luxury tactile feel */
+.bg-grain {
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+  opacity: 0.02;
+  pointer-events: none;
+}
+
+/* SVG Coffee Steam Keyframes */
+@keyframes steamLeft {
+  0% {
+    transform: translate(0, 0) scale(1) skewX(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  50% {
+    transform: translate(-10px, -40px) scale(1.3) skewX(-10deg);
+    opacity: 0.3;
+  }
+  80% {
+    transform: translate(-20px, -80px) scale(1.6) skewX(-20deg);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translate(-30px, -120px) scale(1.8) skewX(-30deg);
+    opacity: 0;
+  }
+}
+
+@keyframes steamRight {
+  0% {
+    transform: translate(0, 0) scale(1) skewX(0deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 0.4;
+  }
+  50% {
+    transform: translate(10px, -40px) scale(1.3) skewX(10deg);
+    opacity: 0.3;
+  }
+  80% {
+    transform: translate(20px, -80px) scale(1.6) skewX(20deg);
+    opacity: 0.1;
+  }
+  100% {
+    transform: translate(30px, -120px) scale(1.8) skewX(30deg);
+    opacity: 0;
+  }
+}
+
+.steam-path-1 {
+  animation: steamLeft 7s ease-in-out infinite;
+  transform-origin: bottom center;
+}
+
+.steam-path-2 {
+  animation: steamRight 6s ease-in-out infinite;
+  animation-delay: 1.5s;
+  transform-origin: bottom center;
+}
+
+.steam-path-3 {
+  animation: steamLeft 8s ease-in-out infinite;
+  animation-delay: 3.5s;
+  transform-origin: bottom center;
+}
+
+.steam-path-4 {
+  animation: steamRight 7s ease-in-out infinite;
+  animation-delay: 5s;
+  transform-origin: bottom center;
+}
+
+/* Luxury border glowing transitions */
+.gold-gradient-border {
+  position: relative;
+}
+.gold-gradient-border::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.4), rgba(20, 15, 10, 0) 50%, rgba(170, 124, 17, 0.4));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.gold-glow {
+  text-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+}
+
+.box-gold-glow {
+  box-shadow: 0 4px 30px rgba(212, 175, 55, 0.05);
+}
+
+/* Glassmorphism utility */
+.glassmorphism {
+  background: rgba(13, 8, 5, 0.65);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(212, 175, 55, 0.15);
+}
+
+.glassmorphism-light {
+  background: rgba(250, 247, 242, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 168, 128, 0.25);
+}
+
+/* Hide main default App css border */
+#root {
+  width: 100% !important;
+  max-width: 100% !important;
+  margin: 0 !important;
+  border-inline: none !important;
+  min-height: 100vh !important;
+  display: block !important;
+  text-align: left !important;
+}
