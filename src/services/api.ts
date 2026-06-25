@@ -1,6 +1,6 @@
 import { Table, Reservation, WaitingListEntry } from '../types';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'https://bon-appetite-backend-bhct.onrender.com/api';
 
 // Helper to construct secure admin headers
 const getAdminHeaders = () => {
