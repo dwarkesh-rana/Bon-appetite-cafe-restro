@@ -69,7 +69,7 @@ Bon Appetite Cafe & Restro`;
 
       const options = {
         hostname: 'api.twilio.com',
-        port: 445, // https
+        port: 443, // HTTPS standard port
         path: `/2010-04-01/Accounts/${twilioAccountSid}/Messages.json`,
         method: 'POST',
         headers: {
@@ -81,7 +81,6 @@ Bon Appetite Cafe & Restro`;
 
       // Create secure request using Node.js built-in https module (avoids npm fetch libraries)
       const req = https.request(
-        `https://api.twilio.com/2010-04-01/Accounts/${twilioAccountSid}/Messages.json`,
         options,
         (res) => {
           let body = '';
