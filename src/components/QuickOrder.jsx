@@ -16,7 +16,7 @@ export default function QuickOrder({ isOpen, onClose }) {
   const { isDarkMode } = useTheme();
   
   // App Config
-  const apiBase = import.meta.env.VITE_API_URL || 'https://bon-appetite-backend-bhct.onrender.com/api';
+  const apiBase = import.meta.env.VITE_API_URL || 'http://localhost:5000/api';
   
   // UI States
   const [menuItems, setMenuItems] = useState([]);
