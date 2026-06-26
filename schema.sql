@@ -35,12 +35,12 @@ CREATE TABLE tables (
 
 -- Populate initial physical tables configuration with hashed tokens
 -- SHA-256 hashes of standard secure tokens:
--- Table 1 Raw Token: tok_table1_secure_xyz1234567890abc -> Hash: e856f6630f576e339b691bfdf015848bb228c2e650b29ff100ee2294efbc12be
--- Table 2 Raw Token: tok_table2_secure_abc1234567890xyz -> Hash: ed41a6e927ef5e2528148b5e94b281f6ca17c2f82ad34bbec48398e09f58ea9c
--- Table 3 Raw Token: tok_table3_secure_qwe1234567890rty -> Hash: a55b5501fbcdca34458f3319082ef52bc9571f544607c8702b8d00922851d95e
--- Table 4 Raw Token: tok_table4_secure_rty1234567890uio -> Hash: d10e14a1e9447385a854ee22816912384f932822a10e10e10e10e10e10e10e10
--- Table 5 Raw Token: tok_table5_secure_uio1234567890pml -> Hash: c5e4b7b2512f458156102ee8168285ffb1220a22a22a22a22a22a22a22a22a22
--- Table 6 Raw Token: tok_table6_secure_pml1234567890qwe -> Hash: b7f174eeaa339bbcd12285ff218285ffb1220a22a22a22a22a22a22a22a22a22
+-- Table 1 Raw Token: tok_table1_secure_xyz1234567890abc -> Hash: 90cabbd86a48b459fabbf69ce97667a96d1cee0080ad7989955f7955560c0af3
+-- Table 2 Raw Token: tok_table2_secure_abc1234567890xyz -> Hash: bc9788185c2b5ba7e492aaf42af8385abbc34f154fd3c889b3594ca5e630623e
+-- Table 3 Raw Token: tok_table3_secure_qwe1234567890rty -> Hash: 7ed6f91e3a3d8a3a7cc5f7a234ca718f995640ccb8a745dd4037abd73273743e
+-- Table 4 Raw Token: tok_table4_secure_rty1234567890uio -> Hash: cc8970a808f96feda05d1a8b4ef71da79ec3a74e0b1033f45394e8a652677695
+-- Table 5 Raw Token: tok_table5_secure_uio1234567890pml -> Hash: 73509df31f867d094ce720dd03bfc8715b9c61c5fcb2d709492a05e22f9e71d4
+-- Table 6 Raw Token: tok_table6_secure_pml1234567890qwe -> Hash: 071569dd69f37db96d3ff8e90a649841ab8720ca1062469d4bbe810c65eb9647
 INSERT INTO tables (id, table_name, capacity, available, qr_token_hash, status) VALUES
 (1, 'Table 1', 2, TRUE, '90cabbd86a48b459fabbf69ce97667a96d1cee0080ad7989955f7955560c0af3', 'available'),
 (2, 'Table 2', 2, TRUE, 'bc9788185c2b5ba7e492aaf42af8385abbc34f154fd3c889b3594ca5e630623e', 'available'),
