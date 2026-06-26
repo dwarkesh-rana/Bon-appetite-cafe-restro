@@ -160,12 +160,12 @@ export const supabase = isUsingSupabase ? createClient(supabaseUrl, supabaseKey)
 // ----------------------------------------------------
 class MockDatabase {
   private tables: TableRecord[] = [
-    { id: 1, table_name: 'Table 1', capacity: 2, available: true, qr_token_hash: 'e856f6630f576e339b691bfdf015848bb228c2e650b29ff100ee2294efbc12be', status: 'available' },
-    { id: 2, table_name: 'Table 2', capacity: 2, available: true, qr_token_hash: 'ed41a6e927ef5e2528148b5e94b281f6ca17c2f82ad34bbec48398e09f58ea9c', status: 'available' },
-    { id: 3, table_name: 'Table 3', capacity: 4, available: true, qr_token_hash: 'a55b5501fbcdca34458f3319082ef52bc9571f544607c8702b8d00922851d95e', status: 'available' },
-    { id: 4, table_name: 'Table 4', capacity: 4, available: true, qr_token_hash: 'd10e14a1e9447385a854ee22816912384f932822a10e10e10e10e10e10e10e10', status: 'available' },
-    { id: 5, table_name: 'Table 5', capacity: 6, available: true, qr_token_hash: 'c5e4b7b2512f458156102ee8168285ffb1220a22a22a22a22a22a22a22a22a22', status: 'available' },
-    { id: 6, table_name: 'Table 6', capacity: 8, available: true, qr_token_hash: 'b7f174eeaa339bbcd12285ff218285ffb1220a22a22a22a22a22a22a22a22a22', status: 'available' },
+    { id: 1, table_name: 'Table 1', capacity: 2, available: true, qr_token_hash: '90cabbd86a48b459fabbf69ce97667a96d1cee0080ad7989955f7955560c0af3', status: 'available' },
+    { id: 2, table_name: 'Table 2', capacity: 2, available: true, qr_token_hash: 'bc9788185c2b5ba7e492aaf42af8385abbc34f154fd3c889b3594ca5e630623e', status: 'available' },
+    { id: 3, table_name: 'Table 3', capacity: 4, available: true, qr_token_hash: '7ed6f91e3a3d8a3a7cc5f7a234ca718f995640ccb8a745dd4037abd73273743e', status: 'available' },
+    { id: 4, table_name: 'Table 4', capacity: 4, available: true, qr_token_hash: 'cc8970a808f96feda05d1a8b4ef71da79ec3a74e0b1033f45394e8a652677695', status: 'available' },
+    { id: 5, table_name: 'Table 5', capacity: 6, available: true, qr_token_hash: '73509df31f867d094ce720dd03bfc8715b9c61c5fcb2d709492a05e22f9e71d4', status: 'available' },
+    { id: 6, table_name: 'Table 6', capacity: 8, available: true, qr_token_hash: '071569dd69f37db96d3ff8e90a649841ab8720ca1062469d4bbe810c65eb9647', status: 'available' },
   ];
 
   private reservations: ReservationRecord[] = [];

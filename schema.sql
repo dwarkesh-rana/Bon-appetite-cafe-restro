@@ -42,12 +42,12 @@ CREATE TABLE tables (
 -- Table 5 Raw Token: tok_table5_secure_uio1234567890pml -> Hash: c5e4b7b2512f458156102ee8168285ffb1220a22a22a22a22a22a22a22a22a22
 -- Table 6 Raw Token: tok_table6_secure_pml1234567890qwe -> Hash: b7f174eeaa339bbcd12285ff218285ffb1220a22a22a22a22a22a22a22a22a22
 INSERT INTO tables (id, table_name, capacity, available, qr_token_hash, status) VALUES
-(1, 'Table 1', 2, TRUE, 'e856f6630f576e339b691bfdf015848bb228c2e650b29ff100ee2294efbc12be', 'available'),
-(2, 'Table 2', 2, TRUE, 'ed41a6e927ef5e2528148b5e94b281f6ca17c2f82ad34bbec48398e09f58ea9c', 'available'),
-(3, 'Table 3', 4, TRUE, 'a55b5501fbcdca34458f3319082ef52bc9571f544607c8702b8d00922851d95e', 'available'),
-(4, 'Table 4', 4, TRUE, 'd10e14a1e9447385a854ee22816912384f932822a10e10e10e10e10e10e10e10', 'available'),
-(5, 'Table 5', 6, TRUE, 'c5e4b7b2512f458156102ee8168285ffb1220a22a22a22a22a22a22a22a22a22', 'available'),
-(6, 'Table 6', 8, TRUE, 'b7f174eeaa339bbcd12285ff218285ffb1220a22a22a22a22a22a22a22a22a22', 'available');
+(1, 'Table 1', 2, TRUE, '90cabbd86a48b459fabbf69ce97667a96d1cee0080ad7989955f7955560c0af3', 'available'),
+(2, 'Table 2', 2, TRUE, 'bc9788185c2b5ba7e492aaf42af8385abbc34f154fd3c889b3594ca5e630623e', 'available'),
+(3, 'Table 3', 4, TRUE, '7ed6f91e3a3d8a3a7cc5f7a234ca718f995640ccb8a745dd4037abd73273743e', 'available'),
+(4, 'Table 4', 4, TRUE, 'cc8970a808f96feda05d1a8b4ef71da79ec3a74e0b1033f45394e8a652677695', 'available'),
+(5, 'Table 5', 6, TRUE, '73509df31f867d094ce720dd03bfc8715b9c61c5fcb2d709492a05e22f9e71d4', 'available'),
+(6, 'Table 6', 8, TRUE, '071569dd69f37db96d3ff8e90a649841ab8720ca1062469d4bbe810c65eb9647', 'available');
 
 -- 3. System Settings Table
 CREATE TABLE system_settings (
